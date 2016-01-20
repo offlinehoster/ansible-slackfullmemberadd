@@ -9,5 +9,4 @@
     method: POST
     return_content: yes  
     HEADER_Content-Type: "application/x-www-form-urlencoded"
-    body: "email={{privatemail}}&token={{token}}&set_active=true"
-
+    body: "email={{privatemail}}&first_name={{name}}&last_name={{surname}}&token={{token}}&set_active=true"
