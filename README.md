@@ -21,6 +21,7 @@ This is not an official usage for the /api/users.admin.invite uri by Slack. It's
 
 Example Playbook
 ----------------
+```
 ---
 - name: ansible-slackfullmemberadd
   hosts: 127.0.0.1
@@ -29,7 +30,7 @@ Example Playbook
   - ansible-slackfullmemberadd
   tags:
   - ansible-slackfullmemberadd
-
+```
 License
 -------
 [MIT](https://tldrlegal.com/license/mit-license)
