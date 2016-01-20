@@ -1,0 +1,6 @@
+---
+name: Agent
+surname: Smith
+email: 'example@domain.tld'
+token: 'Get/Create your token here -> https://api.slack.com/web'
+slackteamname: 'Teamname'
