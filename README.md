@@ -2,6 +2,10 @@
 
 Slack is a platform for team communication
 
+What you can do with this role
+------------------------------
+You can simple integrate this role to your automation process, for example if a new employee is joining your team, you can just add this user by this Ansible role to your team.
+
 Tunables
 --------
 Modifying the vars.yml with your prefered vars
@@ -31,6 +35,11 @@ Example Playbook
   tags:
   - ansible-slackfullmemberadd
 ```
+Ansible Galaxy Role
+-------------------
+[Ansible Galaxy Role 7123](https://galaxy.ansible.com/detail#/role/7123)	
+
+
 License
 -------
 [MIT](https://tldrlegal.com/license/mit-license)
