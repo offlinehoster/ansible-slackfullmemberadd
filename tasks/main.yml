@@ -1,12 +1,13 @@
 ---
 - include_vars: "{{ item }}"
-  with_items: 
+  with_items:
     - vars.yml
-    
+
 - name: Add a new Fullmember user to Slack
   uri:
-    url: https://{{slackteamname}}.slack.com/api/users.admin.invite
+    url: https://{{ slackteamname }}.slack.com/api/users.admin.invite
     method: POST
-    return_content: yes  
-    HEADER_Content-Type: "application/x-www-form-urlencoded"
-    body: "email={{privatemail}}&first_name={{name}}&last_name={{surname}}&token={{token}}&set_active=true"
+    return_content: yes
+    headers:
+      Content-Type: "application/x-www-form-urlencoded"
+    body: "email={{ privatemail }}&first_name={{ name }}&last_name={{ surname }}&token={{ token }}&set_active=true"

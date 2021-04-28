@@ -2,7 +2,7 @@
 
 Slack is a platform for team communication
 
-What you can do with this role
+## What you can do with this role
 ------------------------------
 You can simple integrate this role to your automation process, for example if a new employee is joining your team, you can just add this user by this Ansible role to your team.
 
@@ -15,13 +15,13 @@ Modifying the vars.yml with your prefered vars
 * `slackteamname:` (string) - your teamname at Slack
 * `token:` (string) - your token for access this api (get/create it here https://api.slack.com/web)
 
-Dependencies
+## Dependencies
 ------------
-nothing special
+nothing special - but you may use just the latest version of ansible if possible.
 
-Good to know
+## Good to know
 ------------
-This is not an official usage for the /api/users.admin.invite uri by Slack. It's working good since a while, so i decide to automate this process by using ansible. 
+This is not an official usage for the /api/users.admin.invite uri by Slack. It's working good since a while, so i decide to automate this process by using ansible.
 
 Example Playbook
 ----------------
@@ -35,15 +35,14 @@ Example Playbook
   tags:
   - ansible-slackfullmemberadd
 ```
-Ansible Galaxy Role
+## Ansible Galaxy Role
 -------------------
-[Ansible Galaxy Role 7123](https://galaxy.ansible.com/detail#/role/7123)	
+[Ansible Galaxy Role ](https://galaxy.ansible.com/offlinehoster/slack_fullmemberadd)
 
-
-License
+## License
 -------
 [MIT](https://tldrlegal.com/license/mit-license)
 
-Contributors
+## Contributors
 ------------
 * Christian Sarazin
